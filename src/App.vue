@@ -1,12 +1,11 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
-import OptionAPI from "./views/OptionAPI.vue";
-import Name from "./views/Name.vue";
+import RefReactiveExample from "./views/RefReactiveExample.vue";
 </script>
 
 <template>
 	<header></header>
-	<Name />
+	<RefReactiveExample />
 	<RouterView />
 </template>
 

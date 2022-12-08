@@ -1,13 +1,16 @@
 <script setup>
-import { ref } from "vue";
-//必須使用const宣告
+import { ref, onMounted } from "vue";
 const name = ref("Danny");
 
 const changeName = () => {
-	//改變的時候式改變其value如下
+	//改變的時候是改變其value如下
+	//請勿寫成name = "Jacky"
 	name.value = "Jacky";
 	console.log(name);
 };
+onMounted(() => {
+	console.log(name.value);
+});
 </script>
 
 <template>
