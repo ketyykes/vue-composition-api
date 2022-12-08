@@ -26,6 +26,6 @@ export default {
 </script>
 
 <template>
-	<div>Vue：{{ count }}</div>
+	<div>VueOptionAPI：{{ count }}</div>
 	<button @click="increment">Count is: {{ count }}</button>
 </template>
