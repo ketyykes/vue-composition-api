@@ -1,13 +1,28 @@
-<script setup>
+<script>
 import { onMounted, ref } from "vue";
-const count = ref(0);
+import HelloWorld from "../components/HelloWorld.vue";
+export default {
+	components: {
+		HelloWorld,
+	},
+	props: {
+		data: {
+			type: Object,
+			default: () => ({}),
+		},
+	},
+	setup() {
+		const count = ref(0);
 
-const increment = () => {
-	count.value += 1;
+		const increment = () => {
+			count.value += 1;
+		};
+		onMounted(() => {
+			console.log(count.value);
+		});
+		return { count, increment };
+	},
 };
-onMounted(() => {
-	console.log(count.value);
-});
 </script>
 
 <template>
