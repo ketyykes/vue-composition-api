@@ -1,11 +1,11 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
-import RefReactiveExample from "./views/RefReactiveExample.vue";
+import ComputedExample from "./views/ComputedExample.vue";
 </script>
 
 <template>
 	<header></header>
-	<RefReactiveExample />
+	<ComputedExample />
 	<RouterView />
 </template>
 
