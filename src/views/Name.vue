@@ -1,7 +1,10 @@
 <script setup>
 import { ref } from "vue";
-let name = ref("Danny");
+//必須使用const宣告
+const name = ref("Danny");
+
 const changeName = () => {
+	//改變的時候式改變其value如下
 	name.value = "Jacky";
 	console.log(name);
 };
