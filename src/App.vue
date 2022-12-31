@@ -5,7 +5,7 @@ import ComputedExample from "./views/ComputedExample.vue";
 
 <template>
 	<header></header>
-	<ComputedExample />
+	<!-- <ComputedExample /> -->
 	<RouterView />
 </template>
 

@@ -1,13 +1,21 @@
 <script setup>
 import { computed } from "@vue/reactivity";
 import { ref } from "vue";
-const idx = ref(0);
-const data = computed(() => {
-	return idx.value ? "這個大於三" : "這個小於三";
+const count = ref(1);
+const plusOne = computed({
+	get: () => {
+		return count;
+	},
+	//當plusOne被設值的時候就會改變count的值
+	set: (val) => {
+		count.value = val;
+	},
 });
-setTimeout(() => {
-	idx.value = 8;
-}, 2000);
+
+// 這邊設值plusOne
+plusOne.value = 99;
+//因為computed的屬性有setter所以最後就會改變count.vaLue
+console.log(count.value);
 </script>
 
 <template>
