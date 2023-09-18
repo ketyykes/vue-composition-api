@@ -19,6 +19,12 @@ const router = createRouter({
 			//動態引入
 			component: () => import("../views/AboutView.vue"),
 		},
+		{
+			path: "/lifecycle",
+			name: "lifecycle",
+			//實際引入
+			component: () => import("../views/LifeCycle.vue"),
+		},
 	],
 });
 
