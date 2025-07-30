@@ -1,11 +1,8 @@
 <script setup>
-import { RouterLink, RouterView } from "vue-router";
-import ComputedExample from "./views/ComputedExample.vue";
+import { RouterView } from "vue-router";
 </script>
 
 <template>
-	<header></header>
-	<!-- <ComputedExample /> -->
 	<RouterView />
 </template>
 
